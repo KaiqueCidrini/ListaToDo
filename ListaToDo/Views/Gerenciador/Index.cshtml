@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "Lista de Tarefas";
+}
+
+<div class = text-center>
+    <h1 ="display-2">
+        Lista de Tarefas</h1>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a class="btn btn-primary" role="button" asp-controller="Gerenciador" asp-action ="Criar">Adicionar nova Tarefa</a>
+        </div>
+        <br />
+
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Título</th>
+                    <th scope="col">Data de Vencimento</th>
+                    <th scope="col">Descrição</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Fazer trabalho da faculdade</td>
+                    <td>30/12/2023  </td>
+                    <td>Devo fazer meu trabalho sobre redes o quanto antes pois a data de entrega é para o final do mês</td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-success">Concluir Tarefa</button>
+                            <a role="button" class="btn btn-danger">Excluir</a>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Realisar entrevista de emprego</td>
+                    <td>22/12/2023</td>
+                    <td>Devo me preparar 30 minutos antes para realizar minha entrevista</td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-success">Concluir Tarefa</button>
+                            <a role="button" class="btn btn-danger">Excluir</a>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Fazer almoço</td>
+                    <td>22/12/2023</td>
+                    <td>Devo começar a preparar meu almoço as 11:00 </td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-success">Concluir Tarefa</button>
+                            <a role="button" class="btn btn-danger">Excluir</a>
+
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+</div>
+
